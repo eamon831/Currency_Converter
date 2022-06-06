@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f3"
+    tools:context=".Converter">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h4"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"></EditText>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardusd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h8"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h5"
+        app:neumorph_shapeType="basin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvusd"
+            android:hint="Enter Amount And Press Convert"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardeur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h9"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h8"
+        app:neumorph_shapeType="basin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tveur"
+            android:hint="Enter Amount And Press Convert"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardcad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h10"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h9"
+        app:neumorph_shapeType="basin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvcad"
+            android:hint="Enter Amount And Press Convert"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardnzd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h13"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h12"
+        app:neumorph_shapeType="basin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvnzd"
+            android:hint="Enter Amount And Press Convert"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardbdt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/h14"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h13"
+        app:neumorph_shapeType="basin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvbdt"
+            android:hint="Enter Amount And Press Convert"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/convert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="CONVERT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/h7"
+        app:layout_constraintEnd_toStartOf="@+id/h2"
+        app:layout_constraintStart_toStartOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h6"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"></androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"></androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"></androidx.constraintlayout.widget.Guideline>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

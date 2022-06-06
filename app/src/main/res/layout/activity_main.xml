@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ecf0f3">
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/USD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="USD"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:neumorph_shapeType="flat"
+        app:layout_constraintBottom_toTopOf="@+id/g4"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintStart_toStartOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="@+id/g3">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/EUR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="EUR"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/g6"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintStart_toStartOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="@+id/g5"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/CAD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="CAD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/g8"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintStart_toStartOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="@+id/g7"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/NZD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="NZD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/g10"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintStart_toStartOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="@+id/g9"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/BDT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="BDT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/g12"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintStart_toStartOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="@+id/g11"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphButton>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"></androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85">
+    </androidx.constraintlayout.widget.Guideline>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
